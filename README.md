@@ -17,18 +17,18 @@
 ## Repository Structure
 ```
 ReLMXEL/
-├── Builds/ # Necessary Simulator Builds
-│ ├── ChampSim/ # ChampSim Directory
-│ │ ├── Modifications # Necessary Modifications to be done
-│ │ ├── ChampSim-master.zip # Compatible version for modifications
+├── Builds/ 					# Necessary Simulator Builds
+│ ├── ChampSim/ 				# ChampSim Directory
+│ │ ├── Modifications 			# Necessary Modifications to be done
+│ │ ├── ChampSim-master.zip 	# Compatible version for modifications
 │ │ └── README.md
-│ ├── DRAMSys/ # DRAMSys Directory
-│ │ ├── Modifications # Necessary Modifications to be done
-│ │ ├── ChampSim-master.zip # Compatible version for modifications
+│ ├── DRAMSys/ 					# DRAMSys Directory
+│ │ ├── Modifications 			# Necessary Modifications to be done
+│ │ ├── ChampSim-master.zip 	# Compatible version for modifications
 │ │ └── README.md
-│ └── PinTool.cpp # Tracing tool to trace BFS, STREAM and GEMM
+│ └── PinTool.cpp 				# Tracing tool to trace BFS, STREAM and GEMM
 │
-├── Hyperparameter_Tuning/ # Workload wise Hyperparameter Tuning logs
+├── Hyperparameter_Tuning/		# Workload wise Hyperparameter Tuning logs
 │ ├── BFS/
 │ ├── fotonik/
 │ ├── gcc/
@@ -40,13 +40,13 @@ ReLMXEL/
 │ ├── stream/
 │ └── xalancbmk/
 │
-├── Resources/ # Resources for README.md
+├── Resources/ 					# Resources for README.md
 │ ├── ReLMXEL.png
 │ └── Results.png
 │
-├── DRAMSys_MARL_Baseline.py # Python script to run Baseline
-├── DRAMSys_MARL_Online.py # Python script to run ReLMXEL
-├── Hyperparameter_Tuning.ods # Results and Hyperparameter Tuning data.
+├── DRAMSys_MARL_Baseline.py 	# Python script to run Baseline
+├── DRAMSys_MARL_Online.py 		# Python script to run ReLMXEL
+├── Hyperparameter_Tuning.ods 	# Results and Hyperparameter Tuning data.
 ├── LICENSE
 └── README.md
 ```
