@@ -27,10 +27,7 @@ $ cmake --build build
 
 4. Change the `PowerAnalysis` parameter from .json files in `DRAMSys/configs/simconfig/` to **true**
 
-5. Verify the working of simulator by: 
-```console
-$ ./DRAMSys/build/bin/DRAMSys ./configs/ddr4-example.json
-```
+5. Verify the working of simulator by: `$ ./DRAMSys/build/bin/DRAMSys ./configs/ddr4-example.json`
 
 6.	Add the `fr_fcfs_test.json` in `DRAMSys/configs/mcconfig/` from the **Modifications** directory.
 
