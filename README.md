@@ -15,7 +15,7 @@
 ![ReLMXEL](Resources/ReLMXEL.png)
 
 ## Repository Structure
-
+```
 ReLMXEL/
 ├── Builds/ # Necessary Simulator Builds
 │ ├── ChampSim/ # ChampSim Directory
@@ -49,7 +49,7 @@ ReLMXEL/
 ├── Hyperparameter_Tuning.ods # Results and Hyperparameter Tuning data.
 ├── LICENSE
 └── README.md
-
+```
 ## Experimental Setup
 
 ### Requirements
