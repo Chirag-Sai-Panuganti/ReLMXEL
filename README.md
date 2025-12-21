@@ -96,9 +96,9 @@ The baseline configuration for **DRAMSys** memory controller parameters is set a
 ![Results](Resources/Results.png)
 The **ReLMXEL** framework demonstrated significant improvements in energy efficiency, latency reduction, and memory bandwidth utilization across a variety of workloads. On average, ReLMXEL improved:
 
-- **Energy Consumption**: Reduced by 6.5% on an average compared to baseline approaches.
-- **Latency**: Increased by 0.4% on an average, showcasing that latency has not been impacted significantly.
-- **Bandwidth Utilization**: Enhanced by 37% on an average, leading to more efficient use of available memory bandwidth.
+- **Energy Consumption**: Reduced by **6.5%** on an average compared to baseline approaches.
+- **Latency**: Increased by **0.4%** on an average, showcasing that latency has not been impacted significantly.
+- **Bandwidth Utilization**: Enhanced by **37%** on an average, leading to more efficient use of available memory bandwidth.
 
 These improvements were consistent across multiple workloads. The adaptability of the multi-agent RL model allowed **ReLMXEL** to adjust dynamically to different workload patterns, optimizing memory performance with explainability.
 
