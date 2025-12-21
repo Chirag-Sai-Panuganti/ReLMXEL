@@ -18,21 +18,51 @@
 
 2. Replace the files `StlPlayer.h` and `StlPlayer.cpp` in `DRAMSys/src/simulator/simulator/player` with the corresponding files in the **Modifications** directory for splitting the trace at regular intervals.
 
-3. Change the trace file to be used from the `name` parameter in `DRAMSys/configs/ddr4-example.json` file.
-
-4. Build the simulator: 
+3. Build the simulator: 
 ```console
 $ cd DRAMSys
 $ cmake -B build -D DRAMSYS_WITH_DRAMPOWER=Y
 $ cmake --build build
 ```
 
-5. Change the `PowerAnalysis` parameter from .json files in `DRAMSys/configs/simconfig/` to **true**
+4. Change the `PowerAnalysis` parameter from .json files in `DRAMSys/configs/simconfig/` to **true**
 
-6. Verify the working of simulator by: 
+5. Verify the working of simulator by: 
 ```console
 $ ./DRAMSys/build/bin/DRAMSys ./configs/ddr4-example.json
 ```
+
+6.	Add the `fr_fcfs_test.json` in `DRAMSys/configs/mcconfig/` from the **Modifications** directory.
+
+
+## Simulating
+### Steps:
+1.	When running the Baseline.py, the baseline configuration at `$ ./DRAMSys/configs/mcconfig/fr_fcfs.json` for **DRAMSys** memory controller parameters is set as follows:
+
+```json
+{
+    "mcconfig": {
+        "PagePolicy": "OpenAdaptive",
+        "Scheduler": "FrFcfs",
+        "SchedulerBuffer": "Bankwise",
+        "RequestBufferSize": 8,
+        "CmdMux": "Oldest",
+        "RespQueue": "Reorder",
+        "RefreshPolicy": "AllBank",
+        "RefreshMaxPostponed": 8,
+        "RefreshMaxPulledin": 8,
+        "PowerDownPolicy": "NoPowerDown",
+        "Arbiter": "Reorder",
+        "MaxActiveTransactions": 128,
+        "RefreshManagement": false
+    }
+}
+```
+
+2.	Change the `mcconfig` parameter to `fr_fcfs.json` in `$ ./DRAMSys/configs/ddr4-example.json` when running Baseline.py and `fr_fcfs_test.json` when running ReLMXEL.py.
+
+3.	Change the `name` parameter to `trace_name.stl` in `$ ./DRAMSys/configs/ddr4-example.json`.
+
 
 ## References
 L. Steiner, M. Jung, F. S. Prado, K. Bykov, N. Wehn. International Conference on Embedded Computer Systems: Architectures, Modeling, and Simulation (SAMOS), July, 2020, Samos Island, Greece.
