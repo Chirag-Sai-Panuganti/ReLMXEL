@@ -14,38 +14,39 @@
 - **Workload Traces**: Utilizes memory traces from benchmarks like **GEMM**, **STREAM**, **Breadth First Search** and workloads from **SPEC CPU 2017**, and more, to evaluate and optimize memory controller performance.
 ![ReLMXEL](Resources/ReLMXEL.png)
 
-##Repository Structure
+## Repository Structure
+
 ReLMXEL/
-├── Builds/                   		# Necessary Simulator Builds
-│   ├── ChampSim/             		# ChampSim Directory
-│   │   ├── Modifications			# Necessary Modifications to be done
-│   │   ├── ChampSim-master.zip     # Compatible version for modifications 
-│   │   └── README.md 
-│   ├── DRAMSys/             		# DRAMSys Directory
-│   │   ├── Modifications			# Necessary Modifications to be done
-│   │   ├── ChampSim-master.zip     # Compatible version for modifications 
-│   │   └── README.md
-│   └── PinTool.cpp					# Tracing tool to trace BFS, STREAM and GEMM
+├── Builds/ # Necessary Simulator Builds
+│ ├── ChampSim/ # ChampSim Directory
+│ │ ├── Modifications # Necessary Modifications to be done
+│ │ ├── ChampSim-master.zip # Compatible version for modifications
+│ │ └── README.md
+│ ├── DRAMSys/ # DRAMSys Directory
+│ │ ├── Modifications # Necessary Modifications to be done
+│ │ ├── ChampSim-master.zip # Compatible version for modifications
+│ │ └── README.md
+│ └── PinTool.cpp # Tracing tool to trace BFS, STREAM and GEMM
 │
-├── Hyperparameter_Tuning/          # Workload wise Hyperparameter Tuning logs
-│   ├── BFS/
-│   ├── fotonik/
-│   ├── gcc/
-│   ├── gemm/
-│   ├── lbm/
-│   ├── mcf/
-│   ├── omnetpp/
-│   ├── roms/
-│   ├── stream/
-│   └── xalancbmk/
+├── Hyperparameter_Tuning/ # Workload wise Hyperparameter Tuning logs
+│ ├── BFS/
+│ ├── fotonik/
+│ ├── gcc/
+│ ├── gemm/
+│ ├── lbm/
+│ ├── mcf/
+│ ├── omnetpp/
+│ ├── roms/
+│ ├── stream/
+│ └── xalancbmk/
 │
-├── Resources/                     # Resources for README.md
-│   ├── ReLMXEL.png
-│   └── Results.png
+├── Resources/ # Resources for README.md
+│ ├── ReLMXEL.png
+│ └── Results.png
 │
-├── DRAMSys_MARL_Baseline.py       # Python script to run Baseline
-├── DRAMSys_MARL_Online.py		   # Python script to run ReLMXEL
-├── Hyperparameter_Tuning.ods	   # Results and Hyperparameter Tuning data.
+├── DRAMSys_MARL_Baseline.py # Python script to run Baseline
+├── DRAMSys_MARL_Online.py # Python script to run ReLMXEL
+├── Hyperparameter_Tuning.ods # Results and Hyperparameter Tuning data.
 ├── LICENSE
 └── README.md
 
