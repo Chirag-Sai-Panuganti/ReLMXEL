@@ -1,16 +1,17 @@
+<!--
 ---
 title: ReLMXEL
 arxiv: 2603.17309
 tags:
-- reinforcement-learning
-- memory-systems
-- explainable-ai
-- multi-agent
+  - reinforcement-learning
+  - memory-systems
+  - explainable-ai
+  - multi-agent
 ---
+-->
 
 # ReLMXEL: Adaptive RL-Based Memory Controller with Explainable Energy and Latency Optimization
 
-📄 **Paper**: https://arxiv.org/abs/2603.17309
 **ReLMXEL** is an explainable multi-agent reinforcement learning (RL) framework designed to optimize memory controller parameters, reducing latency and energy consumption while improving memory bandwidth utilization. By dynamically adjusting based on memory behavior, **ReLMXEL** enhances overall system performance while maintaining transparency and adaptability in decision-making.
 
 ## Key Features
@@ -113,3 +114,12 @@ The **ReLMXEL** framework demonstrated significant improvements in energy effici
 
 These improvements were consistent across multiple workloads. The adaptability of the multi-agent RL model allowed **ReLMXEL** to adjust dynamically to different workload patterns, optimizing memory performance with explainability.
 
+## Citation
+Cite the work:
+```bibtex
+@article{panuganti2026relmxel,
+  title={ReLMXEL: Adaptive RL-Based Memory Controller with Explainable Energy and Latency Optimization},
+  author={Panuganti Chirag Sai and Gandholi Sarat and R. Raghunatha Sarma and Venkata Kalyan Tavva and Naveen M},
+  journal={arXiv preprint arXiv:2603.17309},
+  year={2026}
+}
