@@ -2,6 +2,7 @@
 ---
 title: ReLMXEL
 arxiv: 2603.17309
+paper_url: https://arxiv.org/abs/2603.17309
 tags:
   - reinforcement-learning
   - memory-systems
